@@ -1,66 +1,13 @@
-## Foundry
+## English Auction (RareSkills project)
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+Features:
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Multiple NFT Auctions**: This contract makes anyone able to auction off as many NFTs as they like, it also provides the ability for anyone to bid on as many NFTs as they like
+- **Bid on an Auction**: You can bid on any NFT you want and this contract will keep track of the highest bids on all contracts
+- **Payout**: Once an auction is ended this contract will send the ETH and/or NFT to whoever met the winning conditions for them
+- **Enforcement**: The contract is equipped to guarantee the seller's reserve is met and whether it is or not, the correct parties are issued the correct assets in the correct amounts
+- **Testing**: This contract is equipped with a comprehensive test suite to ensure the contract behaves as intended
 
-## Documentation
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
